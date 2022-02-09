@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SampleSuite" thread-count="1" parallel="none">
+    <test name="testGuru">
+        <classes>
+            <class name="tests.seleniumTests.TestRegisterUser"/>
+        </classes>
+    </test>
+</suite>

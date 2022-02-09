@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+    <reporter-output>
+    </reporter-output>
+    <suite started-at="2021-12-25T13:40:22 AMT" name="SampleSuite" finished-at="2021-12-25T13:40:41 AMT"
+           duration-ms="19200">
+        <groups>
+        </groups>
+        <test started-at="2021-12-25T13:40:22 AMT" name="testGuru" finished-at="2021-12-25T13:40:41 AMT"
+              duration-ms="19200">
+            <class name="tests.seleniumTests.TestRegisterUser">
+                <test-method is-config="true"
+                             signature="setUp()[pri:0, instance:tests.seleniumTests.TestRegisterUser@3c87521]"
+                             started-at="2021-12-25T13:40:22 AMT" name="setUp" finished-at="2021-12-25T13:40:26 AMT"
+                             duration-ms="3947" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- setUp -->
+                <test-method
+                        signature="checkMercuryToursPageTitle()[pri:1, instance:tests.seleniumTests.TestRegisterUser@3c87521]"
+                        started-at="2021-12-25T13:40:26 AMT" name="checkMercuryToursPageTitle"
+                        finished-at="2021-12-25T13:40:38 AMT" duration-ms="11992" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- checkMercuryToursPageTitle -->
+                <test-method signature="registerNewUser()[pri:2, instance:tests.seleniumTests.TestRegisterUser@3c87521]"
+                             started-at="2021-12-25T13:40:38 AMT" name="registerNewUser"
+                             finished-at="2021-12-25T13:40:41 AMT" duration-ms="3065" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- registerNewUser -->
+                <test-method is-config="true"
+                             signature="tearDown()[pri:0, instance:tests.seleniumTests.TestRegisterUser@3c87521]"
+                             started-at="2021-12-25T13:40:41 AMT" name="tearDown" finished-at="2021-12-25T13:40:41 AMT"
+                             duration-ms="143" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tearDown -->
+            </class> <!-- tests.seleniumTests.TestRegisterUser -->
+        </test> <!-- testGuru -->
+    </suite> <!-- SampleSuite -->
+</testng-results>

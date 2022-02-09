@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [SampleSuite]" guice-stage="DEVELOPMENT">
+    <test thread-count="1" name="testGuru(failed)">
+        <classes>
+            <class name="tests.seleniumTests.TestRegisterUser">
+                <methods>
+                    <include name="tearDown"/>
+                    <include name="setUp"/>
+                    <include name="registerNewUser"/>
+                </methods>
+            </class> <!-- tests.seleniumTests.TestRegisterUser -->
+        </classes>
+    </test> <!-- testGuru(failed) -->
+</suite> <!-- Failed suite [SampleSuite] -->
