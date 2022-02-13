@@ -3,8 +3,10 @@ package base;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import models.MapBuilder;
+import models.RequestSpecBuilder;
 import org.testng.Assert;
 import java.util.List;
+
 
 import static io.restassured.RestAssured.given;
 
@@ -15,6 +17,8 @@ public class ApiBase {
     public String baseUrlPostmanLocal = "https://6bd604fb-eca4-48d1-8c2c-bdfa6066b3c1.mock.pstmn.io";
     public String baseUrlPostman = "https://api.postman.com";
     public String baseUrlLocal = "http://localhost:80";
+    RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
+
 
     /**
      * Use this method to check status Code
@@ -37,10 +41,7 @@ public class ApiBase {
     public Response getRequest(String baseurl, List<String> params,
                                List<String> headers,  String endpoint) {
         Response get = given().
-                contentType(ContentType.JSON).
-                baseUri(baseurl).
-                params(MapBuilder.reqParam(params)).
-                headers(MapBuilder.reqParam(headers)).
+                spec(requestSpecBuilder.rSpec(baseurl,params,headers)).
                 when().
                 get(endpoint).
                 then().
