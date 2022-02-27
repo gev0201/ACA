@@ -11,7 +11,7 @@ import java.time.Duration;
 public class SeleniumBase {
 
     public WebDriver driver;
-    private String baseUrl = "http://demo.guru99.com";
+
 
 
     @BeforeClass
@@ -21,9 +21,8 @@ public class SeleniumBase {
         options.setAcceptInsecureCerts(true);
         options.getLogLevel();
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         driver.manage().window().maximize();
-        driver.get(baseUrl);
     }
 
     @AfterClass

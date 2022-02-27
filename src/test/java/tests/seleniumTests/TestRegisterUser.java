@@ -11,9 +11,11 @@ public class TestRegisterUser extends SeleniumBase {
 
     MercouryTourRegisterPage mercouryTourRegisterPage;
     SignOnPage signOnPage;
+    private String baseUrl = "http://demo.guru99.com";
 
     @Test(priority = 1)
     public void checkMercuryToursPageTitle() {
+        driver.get(baseUrl);
         mercouryTourRegisterPage = new MercouryTourRegisterPage(driver);
         mercouryTourRegisterPage.clickNewTours();
         mercouryTourRegisterPage.clickDismissAdd();
